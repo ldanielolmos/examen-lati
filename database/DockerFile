@@ -1,0 +1,4 @@
+FROM postgres
+
+ENV POSTGRES_DB laticash
+COPY schema.sql /docker-entrypoint-initdb.d/
